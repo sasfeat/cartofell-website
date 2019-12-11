@@ -1,0 +1,447 @@
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Scada', sans-serif;
+    height: 100vh;
+}
+#page {
+    max-width: 960px;
+    flex-flow: column nowrap;
+    flex-basis: 94%;
+    background-color: white;
+    display: flex;
+    height: 100vh;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.row, div[class^="col-"] {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navmenu__logo_img {
+    height: 60px;
+}
+
+
+.page__navmenu {
+    user-select: none;
+    padding-top: 25px;
+    height: 85px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+.navmenu__check {display: none;}
+
+.navmenu__showmenu, .navmenu__showmenu__close {
+    cursor: pointer;
+    display: none;
+    padding: 5px 10px 10px;
+    font-size: 30px;
+}
+
+.navmenu__toggler-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0 8px 20px;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.6vw;
+}
+
+.toggler-menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.toggler-menu__item__link {
+    padding: 10px;
+}
+
+
+.toggler-menu__item_is-active {
+    color: #1486B7;
+}
+
+.toggler-menu__item:hover {
+    border-color:  #1486B7;
+}
+
+
+.navmenu > .row > div:last-child {
+    display: flex;
+    align-items: center;
+}
+
+/*МЕДИА-ЗАПРОС ПО МЕНЮ*/
+
+
+@media (max-width: 768px) {
+    .page__navmenu > .row > div:last-child {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .page__navmenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        background-color: white;
+        padding: 5px 0 0 3%;
+        height: 65px;
+    }
+
+    .navmenu__showmenu, .navmenu__showmenu__close {
+        display: none;
+        position: fixed;
+        z-index: 4;
+        right: 10px;
+    }
+
+    .navmenu__showmenu {
+        display: inline-block;
+    }
+
+
+    .navmenu__toggler-menu {
+        position: fixed;
+        z-index: 3;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        top: 65px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        padding: 15px 0;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        transform: translateX(100%);
+        transition: transform .2s;
+        will-change: transform;
+        backface-visibility: hidden;
+        font-size: 30px;
+        background-color: white;
+    }
+
+    .navmenu__toggler-menu::-webkit-scrollbar {display: none;}
+    .navmenu__check:checked~.navmenu__toggler-menu {transform: translateX(0);}
+    .navmenu__check:checked+.navmenu__showmenu {display: none;}
+    .navmenu__check:checked+.navmenu__showmenu+.navmenu__showmenu__close {display: inline-block;}
+}
+
+/***********************/
+
+.page__main {
+    z-index: 1;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+button {
+    border: 1px solid #1486B7;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.main__text button {
+    background-color: #1486B7;
+    color: white;
+    width: 45%;
+    height: 50px;
+    font-size: 1.4vw;
+}
+
+.main__text button:hover {
+    color: #1486B7;
+    background-color: white;
+}
+
+.main__image, .main__text {
+    flex-basis: 50%;
+}
+
+.main__text {
+    padding-right: 10px;
+    line-height: 1.5vw;
+    font-size: 1.3vw;
+}
+
+.main__image {
+    padding-left: 10px;
+}
+.main__image img {
+    width: 100%;
+}
+
+.main__text__hub {
+    font-size: 5vw;
+    line-height: 5vw;
+    color: black;
+    margin: 0;
+    font-weight: 900;
+}
+
+.main__text_large {
+    font-size: 2.8vw;
+    color: #1486B7;
+    line-height: 3.2vw;
+    margin: 0;
+    font-weight: 900;
+}
+
+.grad {
+    position: absolute;
+    background: linear-gradient(to bottom, white, #1486B7);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 120px;
+}
+
+.page__footer {
+    z-index: 1;
+    height: 60px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    color: #5a5a5a;
+    font-size: 1vw;
+}
+
+.page__footer a:hover {
+    color: black;
+}
+
+.page__footer > .row {
+    justify-content: space-between;
+    height: 100%;
+} 
+
+footer > .row > div, .footer__contacts > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer__telegram {
+    padding-right: 10px;
+    width: 2vw;
+}
+
+.contacts__main {
+    flex-flow: column nowrap;
+    padding: 30px 0;
+}
+
+.main__icon {
+    width: 3vw;
+    padding-right: 10px;
+}
+
+.main__company-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8vw;
+}
+
+.main__company {
+    font-size: 2.6vw;
+    margin: 0 auto 30px;
+}
+
+.contacts__link:hover {
+    color: #1486B7;
+}
+
+.page__main__box{
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main__rate {
+    user-select: none;
+    cursor: pointer;
+    border: 3px solid #1486B7;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 20px 0;
+}
+
+.rate__price {
+    font-size: 1.6vw;
+    margin: 10px 0;
+}
+
+.rate__price_large {
+    font-size: 3.2vw;
+}
+
+.rate__programm {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.rate__programm__component {
+    position: relative;
+    padding-left: 25px;
+    font-size: 1.2vw;
+    margin: 10px 0;
+}
+
+.component-is-on::before {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    content:'✓';
+}
+
+.component-is-off::before {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    content: '✗';
+}
+
+.rate__button {
+    margin: 0px auto 10px;
+    width: 50%;
+}
+
+.rate__button button {
+    color: #1486B7;
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    font-size: 1.3vw;
+}
+
+.main__rate:hover button {
+    background-color: #1486B7;
+    color: white;
+}
+
+.price__text {
+    min-width: 100%;
+    font-size: 1.6vw;
+    text-align: center;
+}
+
+.price__main {
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+
+@media (max-height: 600px) {
+    html, body, #page {
+        height: auto;
+        min-height: 100vh; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    html, body, #page {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .page__footer {
+        height: auto;
+    }
+
+    .main__image {
+        display: none;
+    }
+    .main__text {
+        padding: 0px;
+    }
+    .page__main {
+        margin: 90px 0 30px;
+    }
+
+    .price__main {
+        flex-flow: column nowrap;
+    }
+
+    .contacts__main {
+        align-items: flex-start;
+    }
+
+    .page__main__box {
+        width: 300px;
+        padding: 20px 0;
+        max-width: none;
+        flex-basis: auto;
+    }
+
+    .main__company-contact {
+        padding: 10px 0;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .navmenu__toggler-menu, .price__text, .rate__price {font-size: 22px;}
+    .main__text, .main__text button,  .rate__button button, .rate__programm__component {font-size: 18px; line-height: 20px;}
+    .main__company-contact {font-size: 24px;}
+    .main__text__hub {font-size: 67px; line-height: 67px;}
+    .main__text_large {font-size: 38px; line-height: 43px;}
+    .rate__price_large {font-size: 43px;}
+    .page__footer {font-size: 13px;}
+    .footer__telegram {width: 26px;}
+    .main__company {font-size: 35px;}
+    .main__icon {width: 40px;}
+}
+
+@media (max-width: 768px) {
+    .navmenu__toggler-menu, .price__text {font-size: 22px;}
+    .main__text, .main__text button,  .rate__button button {font-size: 18px; line-height: 20px;}
+    .main__company-contact, .rate__price {font-size: 24px;}
+    .main__text__hub {font-size: 60px; line-height: 60px;}
+    .main__text_large {font-size: 32px; line-height: 38px;}
+    .rate__price_large {font-size: 46px;}
+    .rate__programm__component {font-size: 20px;}
+    .page__footer {font-size: 13px;}
+    .footer__telegram {width: 26px;}
+    .main__company {font-size: 35px;}
+    .main__icon {width: 35px;}
+}
+
