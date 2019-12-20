@@ -2,7 +2,6 @@ html, body {
     margin: 0 auto;
     padding: 0;
     font-family: 'Scada', sans-serif;
-    height: 100vh;
 }
 #page {
     max-width: 960px;
@@ -54,7 +53,7 @@ a {
 
 .navmenu__toggler-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 8px 0 8px 20px;
     margin: 0;
     list-style: none;
@@ -65,6 +64,7 @@ a {
 
 .toggler-menu__item {
     display: flex;
+    margin: 0 30px;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
@@ -159,6 +159,7 @@ a {
     align-items: center;
     width: 100%;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 button {
@@ -183,20 +184,65 @@ button {
 
 .main__image, .main__text {
     flex-basis: 50%;
+    width: 50%;
+    box-sizing: border-box;
 }
 
 .main__text {
-    padding-right: 10px;
+    padding-right: 20px;
     line-height: 1.5vw;
     font-size: 1.3vw;
 }
 
 .main__image {
-    padding-left: 10px;
+    position: relative;
 }
-.main__image img {
+
+
+#prev, #next {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    cursor: pointer;
+    z-index: 4;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+video {
     width: 100%;
 }
+
+#slider {
+    display: flex;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    padding: 0;
+}
+
+.slider li {
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.slider li.active {
+    display: flex;
+}
+
 
 .main__text__hub {
     font-size: 5vw;
@@ -214,24 +260,16 @@ button {
     font-weight: 900;
 }
 
-.grad {
-    position: absolute;
-    background: linear-gradient(to bottom, white, #1486B7);
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    height: 120px;
-}
 
 .page__footer {
     z-index: 1;
-    height: 60px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
-    padding-bottom: 20px;
+    padding: 15px 0;
     color: #5a5a5a;
     font-size: 1vw;
+    border-top: 1px solid #d1d1d1;
 }
 
 .page__footer a:hover {
@@ -288,6 +326,24 @@ footer > .row > div, .footer__contacts > a {
     box-sizing: border-box;
 }
 
+.block-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 134, 183, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-layer > p {
+    color: white;
+    font-size: 2vw;
+
+}
+
 .main__rate {
     user-select: none;
     cursor: pointer;
@@ -300,6 +356,8 @@ footer > .row > div, .footer__contacts > a {
     width: 100%;
     box-sizing: border-box;
     padding: 20px 20px 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .rate__price {
@@ -319,8 +377,9 @@ footer > .row > div, .footer__contacts > a {
 
 .rate__programm__component {
     position: relative;
-    padding-left: 25px;
+    padding-left: 30px;
     font-size: 1.2vw;
+    line-height: 1.8vw;
     margin: 10px 0;
 }
 
@@ -338,17 +397,14 @@ footer > .row > div, .footer__contacts > a {
     content: '✗';
 }
 
-.rate__button {
-    margin: 0px auto 10px;
-    width: 50%;
-}
 
-.rate__button button {
+.rate__button {
     color: #1486B7;
     background-color: white;
-    width: 100%;
     height: 40px;
     font-size: 1.3vw;
+    width: 60%;
+    margin: 10px auto;
 }
 
 .main__rate:hover button {
@@ -360,6 +416,10 @@ footer > .row > div, .footer__contacts > a {
     min-width: 100%;
     font-size: 1.6vw;
     text-align: center;
+}
+
+.price__text span {
+    font-size: 1.1em;
 }
 
 .price__main {
@@ -376,6 +436,12 @@ footer > .row > div, .footer__contacts > a {
     }
 }
 
+@media (min-width: 1920px) {
+    #page {
+        max-width: 1310px;
+    }
+}
+
 
 @media (max-width: 768px) {
     html, body, #page {
@@ -383,13 +449,15 @@ footer > .row > div, .footer__contacts > a {
         min-height: 100vh;
     }
 
+    .main__image, .main__text {
+        flex-basis: 100%;
+        min-width: 100%;
+    }
+
     .page__footer {
         height: auto;
     }
 
-    .main__image {
-        display: none;
-    }
     .main__text {
         padding: 0px;
     }
@@ -418,9 +486,9 @@ footer > .row > div, .footer__contacts > a {
 
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1400px) and (max-width: 1920px) {
     .navmenu__toggler-menu, .price__text, .rate__price {font-size: 22px;}
-    .main__text, .main__text button,  .rate__button button, .rate__programm__component {font-size: 18px; line-height: 20px;}
+    .main__text, .main__text button,  .rate__button, .rate__programm__component, .block-layer > p {font-size: 18px; line-height: 20px;}
     .main__company-contact {font-size: 24px;}
     .main__text__hub {font-size: 67px; line-height: 67px;}
     .main__text_large {font-size: 38px; line-height: 43px;}
@@ -433,15 +501,37 @@ footer > .row > div, .footer__contacts > a {
 
 @media (max-width: 768px) {
     .navmenu__toggler-menu, .price__text {font-size: 22px;}
-    .main__text, .main__text button,  .rate__button button {font-size: 18px; line-height: 20px;}
+    .main__text, .main__text button,  .rate__button, .block-layer > p {font-size: 18px; line-height: 20px;}
     .main__company-contact, .rate__price {font-size: 24px;}
     .main__text__hub {font-size: 60px; line-height: 60px;}
     .main__text_large {font-size: 32px; line-height: 38px;}
     .rate__price_large {font-size: 46px;}
-    .rate__programm__component {font-size: 20px;}
+    .rate__programm__component {font-size: 20px; line-height: normal;}
     .page__footer {font-size: 13px;}
     .footer__telegram {width: 26px;}
     .main__company {font-size: 35px;}
     .main__icon {width: 35px;}
 }
+
+@media (min-width: 1921px) {
+    .navmenu__toggler-menu {font-size: 30px;}
+    .price__text {font-size: 36px};
+    .rate__price {font-size: 38px};
+    .main__text, .main__text button,  .rate__button, .rate__programm__component, .block-layer > p {font-size: 34px}
+    .rate__programm__component {line-height: 50px;}
+    .main__company-contact {font-size: 32px;}
+    .main__text__hub {font-size: 110px; line-height: 110px;}
+    .main__text_large {font-size: 60px; line-height: 60px;}
+    .rate__price_large {font-size: 74px;}
+    .page__footer {font-size: 20px;}
+    .footer__telegram {width: 32px;}
+    .main__company {font-size: 45px;}
+    .main__icon {width: 48px;}
+    .rate__button {height: 60px;}
+}
+
+
+
+
+
 
