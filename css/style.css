@@ -230,6 +230,7 @@ video {
 .slider {
     position: relative;
     padding: 0;
+    margin: 0;
 }
 
 .slider li {
@@ -453,6 +454,12 @@ footer > .row > div, .footer__contacts > a {
         flex-basis: 100%;
         min-width: 100%;
     }
+    
+    #slider {
+        height: calc(94vw*9/16);
+        margin-top: 20px;
+    }
+    
 
     .page__footer {
         height: auto;
@@ -529,9 +536,6 @@ footer > .row > div, .footer__contacts > a {
     .main__icon {width: 48px;}
     .rate__button {height: 60px;}
 }
-
-
-
 
 
 
