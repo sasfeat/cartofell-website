@@ -381,15 +381,15 @@ footer > .row > div, .footer__contacts > a {
     overflow: hidden;
 }
 
-.inactive__rate {
-    color: #999;
-}
 
 .inactive__rate, .inactive__rate .rate__button {
     border-color: rgba(0, 0, 0, 0.1);
     color: lightgray;
 }
 
+.inactive__rate {
+    color: #999;
+}
 
 
 .rate__price {
