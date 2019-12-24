@@ -187,7 +187,6 @@ a {
     font-size: 1.4vw;
     border: 1px solid #4c8dff;
     cursor: pointer;
-    font-weight: 500;
 }
 
 .main__buttons_first {
@@ -228,9 +227,8 @@ a {
     width: 66.67%;
     box-sizing: border-box;
     position: relative;
+    padding-left: 30px;
 }
-
-
 
 video {
     width: 100%;
@@ -362,7 +360,7 @@ footer > .row > div, .footer__contacts > a {
     left: -5px;
     right: -5px;
     bottom: -5px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,7 +385,7 @@ footer > .row > div, .footer__contacts > a {
 }
 
 .inactive__rate, .inactive__rate .rate__button {
-    border-color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 0, 0, 0.1);
     color: lightgray;
 }
 
@@ -490,8 +488,11 @@ footer > .row > div, .footer__contacts > a {
     }
     
     #slider {
-        max-height: calc(94vw*9/16 + 40px);
         margin-top: 20px;
+    }
+
+    .slider-item {
+        max-height: calc(94vw*9/16 + 35px);
     }
     
 
@@ -501,7 +502,13 @@ footer > .row > div, .footer__contacts > a {
 
     .main__text {
         padding: 0px;
+        text-align: center;
     }
+
+    .main__image {
+        padding-left: 0px;
+    }
+
     .page__main {
         margin: 90px 0 30px;
     }
