@@ -490,7 +490,7 @@ footer > .row > div, .footer__contacts > a {
     }
     
     #slider {
-        height: calc(94vw*9/16 + 25px);
+        height: calc(94vw*9/16 + 35px);
         margin-top: 20px;
     }
     
