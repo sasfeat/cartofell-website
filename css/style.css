@@ -189,12 +189,13 @@ a {
     cursor: pointer;
 }
 
-.main__buttons_first {
+.main__buttons_first, .main__buttons_second:hover {
     background-color: #4c8dff;
     color: white;
 }
 
-.main__buttons_second {
+
+.main__buttons_second, .main__buttons_first:hover {
     background-color: white;
     color: #4c8dff;
 }
