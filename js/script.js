@@ -17,7 +17,7 @@ for (let i = 0; i < dots.length; i++) {
             dots[curSlide].style.backgroundColor = 'lightgray';
             curSlide = i;
             slides[curSlide].classList.add("active");
-            dots[curSlide].style.backgroundColor = '#00beff';
+            dots[curSlide].style.backgroundColor = '#03a7df';
             video[curSlide].play();
             video[curSlide].addEventListener('ended', nextSlide);
         }
@@ -27,7 +27,7 @@ for (let i = 0; i < dots.length; i++) {
 
 video[curSlide].play();
 video[curSlide].addEventListener('ended', nextSlide);
-dots[curSlide].style.backgroundColor = '#00beff';
+dots[curSlide].style.backgroundColor = '#03a7df';
 
 function nextSlide() {
     slides[curSlide].classList.remove("active");
@@ -37,7 +37,7 @@ function nextSlide() {
     curSlide++;
     curSlide = curSlide < slides.length ? curSlide : 0;
     slides[curSlide].classList.add("active");
-    dots[curSlide].style.backgroundColor = '#00beff';
+    dots[curSlide].style.backgroundColor = '#03a7df';
     video[curSlide].play();
     video[curSlide].addEventListener('ended', nextSlide);
 }

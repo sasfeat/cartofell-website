@@ -81,11 +81,11 @@ a {
 
 
 .toggler-menu__item_is-active {
-    color: #00beff;
+    color: #03a7df;
 }
 
 .toggler-menu__item:hover {
-    border-color:  #00beff;
+    border-color:  #03a7df;
 }
 
 
@@ -190,19 +190,19 @@ a {
     width: 100%;
     height: 60px;
     font-size: 18px;
-    border: 1px solid #00beff;
+    border: 1px solid #03a7df;
     cursor: pointer;
 }
 
 .main__buttons_first, .main__buttons_second:hover {
-    background-color: #00beff;
+    background-color: #03a7df;
     color: white;
 }
 
 
 .main__buttons_second, .main__buttons_first:hover {
     background-color: white;
-    color: #00beff;
+    color: #03a7df;
 }
 
 
@@ -222,7 +222,7 @@ a {
 .main__text__hub {
     font-size: 60px;
     line-height: 60px;
-    color: #00beff;
+    color: #03a7df;
     margin: 0;
     font-weight: 400;
 }
@@ -352,7 +352,7 @@ footer > .row > div, .footer__contacts > a {
 }
 
 .contacts__link:hover {
-    color: #00beff;
+    color: #03a7df;
 }
 
 /*********************************/
@@ -373,7 +373,7 @@ footer > .row > div, .footer__contacts > a {
 .main__rate {
     user-select: none;
     cursor: pointer;
-    border: 3px solid #00beff;
+    border: 3px solid #03a7df;
     border-radius: 30px;
     display: flex;
     flex-flow: column nowrap;
@@ -426,20 +426,20 @@ footer > .row > div, .footer__contacts > a {
 }
 
 .rate__button {
-    color: #00beff;
+    color: #03a7df;
     background-color: white;
     height: 40px;
     font-size: 18px;
     width: 60%;
     margin: 10px auto;
-    border: 1px solid #00beff;
+    border: 1px solid #03a7df;
     border-radius: 8px;
     cursor: pointer;
     font-weight: 700;
 }
 
 .main__rate:hover button {
-    background-color: #00beff;
+    background-color: #03a7df;
     color: white;
 }
 
@@ -458,7 +458,7 @@ footer > .row > div, .footer__contacts > a {
 
 .price__text span {
     font-size: 1.1em;
-    color: #00beff;
+    color: #03a7df;
 }
 
 .price__main {
@@ -495,11 +495,15 @@ footer > .row > div, .footer__contacts > a {
     }
     
     #slider {
-        margin: 20px 0 10px;
+        margin-top: 20px;
+    }
+
+    .dots {
+        margin-top: 0px;
     }
 
     .slider-item {
-        max-height: calc(94vw*9/16 + 35px);
+        min-height: calc(94vw*9/16 + 50px);
     }
 
     .main__text {
