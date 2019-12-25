@@ -576,15 +576,15 @@ footer > .row > div, .footer__contacts > a {
     .navmenu__toggler-menu {font-size: 18px;}
     .main__text {font-size: 18px; line-height: 40px;}
     .main__text__hub {font-size: 60px; line-height: 60px;}
-    .main__text button {font-size: 28px}
+    .main__text button {font-size: 18px}
     .videolabel {font-size: 18px;}
     .price__text {font-size: 18px; line-height: 32px;}
-    .rate__price {font-size: 32px}
-    .rate__programm__component {font-size: 24px; line-height: 32px;}
-    .rate__button {font-size: 26px;}
-    .main__company-contact {font-size: 36px;}
+    .rate__price {font-size: 22px}
+    .rate__programm__component {font-size: 16px; line-height: 28px;}
+    .rate__button {font-size: 18px;}
+    .main__company-contact {font-size: 24px;}
     .page__footer {font-size: 12px;}
     .footer__telegram {width: 18px;}
-    .main__icon {width: 57px;}
+    .main__icon {width: 32px;}
 }
 
