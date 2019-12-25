@@ -81,11 +81,11 @@ a {
 
 
 .toggler-menu__item_is-active {
-    color: #4c8dff;
+    color: #00beff;
 }
 
 .toggler-menu__item:hover {
-    border-color:  #4c8dff;
+    border-color:  #00beff;
 }
 
 
@@ -147,6 +147,10 @@ a {
         background-color: white;
     }
 
+    .toggler-menu__item:hover {
+        border-color:  #fff;
+    }
+
     .toggler-menu__item__link {
         margin: 20px 0;
     }
@@ -186,19 +190,19 @@ a {
     width: 100%;
     height: 60px;
     font-size: 18px;
-    border: 1px solid #4c8dff;
+    border: 1px solid #00beff;
     cursor: pointer;
 }
 
 .main__buttons_first, .main__buttons_second:hover {
-    background-color: #4c8dff;
+    background-color: #00beff;
     color: white;
 }
 
 
 .main__buttons_second, .main__buttons_first:hover {
     background-color: white;
-    color: #4c8dff;
+    color: #00beff;
 }
 
 
@@ -218,7 +222,7 @@ a {
 .main__text__hub {
     font-size: 60px;
     line-height: 60px;
-    color: #4c8dff;
+    color: #00beff;
     margin: 0;
     font-weight: 400;
 }
@@ -348,7 +352,7 @@ footer > .row > div, .footer__contacts > a {
 }
 
 .contacts__link:hover {
-    color: #4c8dff;
+    color: #00beff;
 }
 
 /*********************************/
@@ -369,7 +373,7 @@ footer > .row > div, .footer__contacts > a {
 .main__rate {
     user-select: none;
     cursor: pointer;
-    border: 3px solid #4c8dff;
+    border: 3px solid #00beff;
     border-radius: 30px;
     display: flex;
     flex-flow: column nowrap;
@@ -422,20 +426,20 @@ footer > .row > div, .footer__contacts > a {
 }
 
 .rate__button {
-    color: #4c8dff;
+    color: #00beff;
     background-color: white;
     height: 40px;
     font-size: 18px;
     width: 60%;
     margin: 10px auto;
-    border: 1px solid #4c8dff;
+    border: 1px solid #00beff;
     border-radius: 8px;
     cursor: pointer;
     font-weight: 700;
 }
 
 .main__rate:hover button {
-    background-color: #4c8dff;
+    background-color: #00beff;
     color: white;
 }
 
@@ -454,7 +458,7 @@ footer > .row > div, .footer__contacts > a {
 
 .price__text span {
     font-size: 1.1em;
-    color: #4c8dff;
+    color: #00beff;
 }
 
 .price__main {
