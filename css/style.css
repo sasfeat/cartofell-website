@@ -159,6 +159,11 @@ a {
 
 /***********************/
 
+/*.page__main__container {
+    display: flex;
+    width: 100%;
+}*/
+
 .page__main {
     z-index: 1;
     display: flex;
@@ -211,6 +216,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: -25px;
 }
 
 .main__text__hub {
@@ -548,6 +554,7 @@ footer > .row > div, .footer__contacts > a {
 }
 
 
+/*
 @media (min-width: 1921px) {
     .navmenu__toggler-menu {font-size: 30px;}
     .main__text {font-size: 28px; line-height: 54px;}
@@ -563,6 +570,21 @@ footer > .row > div, .footer__contacts > a {
     .footer__telegram {width: 38px;}
     .main__icon {width: 57px;}
 }
+/*/
 
-
+@media (min-width: 992px) {
+    .navmenu__toggler-menu {font-size: 18px;}
+    .main__text {font-size: 18px; line-height: 40px;}
+    .main__text__hub {font-size: 60px; line-height: 60px;}
+    .main__text button {font-size: 28px}
+    .videolabel {font-size: 18px;}
+    .price__text {font-size: 18px; line-height: 32px;}
+    .rate__price {font-size: 32px}
+    .rate__programm__component {font-size: 24px; line-height: 32px;}
+    .rate__button {font-size: 26px;}
+    .main__company-contact {font-size: 36px;}
+    .page__footer {font-size: 12px;}
+    .footer__telegram {width: 18px;}
+    .main__icon {width: 57px;}
+}
 
