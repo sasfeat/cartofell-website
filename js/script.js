@@ -2,8 +2,7 @@ let slides = document.querySelectorAll(".slider-item"),
     dots = document.querySelectorAll(".dots-item"),
     slider = document.querySelector('.slider'),
     curSlide = 0,
-    video = document.querySelectorAll('video'),
-    mainText = document.querySelector('.main__text');
+    video = document.querySelectorAll('video');
 
 slider.addEventListener('click', videoClick);
 
@@ -60,9 +59,3 @@ function dotClick () {
 
     }
 }
-
-/*
-mainText.style.height = video[0].offsetHeight + 'px';
-window.addEventListener("resize", function() {
-    mainText.style.height = video[0].offsetHeight + 'px';
-});*/

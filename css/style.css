@@ -62,7 +62,7 @@ a {
     list-style: none;
     width: 100%;
     box-sizing: border-box;
-    font-size: 1.6vw;
+    font-size: 18px;
 }
 
 .toggler-menu__item {
@@ -159,10 +159,6 @@ a {
 
 /***********************/
 
-/*.page__main__container {
-    display: flex;
-    width: 100%;
-}*/
 
 .page__main {
     z-index: 1;
@@ -189,7 +185,7 @@ a {
 .main__text button {
     width: 100%;
     height: 60px;
-    font-size: 1.4vw;
+    font-size: 18px;
     border: 1px solid #4c8dff;
     cursor: pointer;
 }
@@ -211,8 +207,8 @@ a {
     width: 33.33%;
     box-sizing: border-box;
     padding-right: 20px;
-    font-size: 1.4vw;
-    line-height: 2.8vw;
+    font-size: 18px;
+    line-height: 36px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -220,8 +216,8 @@ a {
 }
 
 .main__text__hub {
-    font-size: 4.4vw;
-    line-height: 5vw;
+    font-size: 60px;
+    line-height: 60px;
     color: #4c8dff;
     margin: 0;
     font-weight: 400;
@@ -283,7 +279,7 @@ video {
 .videolabel {
     margin: 0;
     text-align: center;
-    font-size: 1.4vw;
+    font-size: 18px;
     color: #999;
 }
 
@@ -301,7 +297,7 @@ video {
     justify-content: flex-end;
     padding: 15px 0;
     color: #5a5a5a;
-    font-size: 1vw;
+    font-size: 12px;
     border-top: 1px solid #d1d1d1;
 }
 
@@ -323,7 +319,7 @@ footer > .row > div, .footer__contacts > a {
 
 .footer__telegram {
     padding-right: 10px;
-    width: 2vw;
+    width: 18px;
 }
 
 /**********************/
@@ -339,7 +335,7 @@ footer > .row > div, .footer__contacts > a {
 }
 
 .main__icon {
-    width: 3vw;
+    width: 30px;
     padding-right: 10px;
 }
 
@@ -347,7 +343,7 @@ footer > .row > div, .footer__contacts > a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.8vw;
+    font-size: 24px;
     margin: 20px 0;
 }
 
@@ -399,7 +395,7 @@ footer > .row > div, .footer__contacts > a {
 
 
 .rate__price {
-    font-size: 1.6vw;
+    font-size: 22px;
     margin: 10px 0;
 }
 
@@ -413,8 +409,8 @@ footer > .row > div, .footer__contacts > a {
 .rate__programm__component {
     position: relative;
     padding-left: 30px;
-    font-size: 1.2vw;
-    line-height: 1.8vw;
+    font-size: 16px;
+    line-height: 24px;
     margin: 10px 0;
 }
 
@@ -429,7 +425,7 @@ footer > .row > div, .footer__contacts > a {
     color: #4c8dff;
     background-color: white;
     height: 40px;
-    font-size: 1.3vw;
+    font-size: 18px;
     width: 60%;
     margin: 10px auto;
     border: 1px solid #4c8dff;
@@ -450,8 +446,8 @@ footer > .row > div, .footer__contacts > a {
 
 .price__text {
     min-width: 100%;
-    font-size: 1.4vw;
-    line-height: 2.2vw;
+    font-size: 18px;
+    line-height: 32px;
     text-align: center;
     margin-bottom: 5px;
 }
@@ -501,11 +497,6 @@ footer > .row > div, .footer__contacts > a {
     .slider-item {
         max-height: calc(94vw*9/16 + 35px);
     }
-    
-
-    .page__footer {
-        height: auto;
-    }
 
     .main__text {
         padding: 0px;
@@ -535,9 +526,7 @@ footer > .row > div, .footer__contacts > a {
         padding: 10px 0;
     }
 
-}
 
-@media (max-width: 991px) {
     .navmenu__toggler-menu {font-size: 22px;}
     .main__text {font-size: 18px; line-height: 28px;}
     .main__text__hub {font-size: 54px; line-height: 60px;}
@@ -553,38 +542,4 @@ footer > .row > div, .footer__contacts > a {
     .main__icon {width: 35px;}
 }
 
-
-/*
-@media (min-width: 1921px) {
-    .navmenu__toggler-menu {font-size: 30px;}
-    .main__text {font-size: 28px; line-height: 54px;}
-    .main__text__hub {font-size: 86px; line-height: 96px;}
-    .main__text button {font-size: 28px}
-    .videolabel {font-size: 28px;}
-    .price__text {font-size: 28px; line-height: 44px;}
-    .rate__price {font-size: 32px}
-    .rate__programm__component {font-size: 24px; line-height: 32px;}
-    .rate__button {font-size: 26px;}
-    .main__company-contact {font-size: 36px;}
-    .page__footer {font-size: 20px;}
-    .footer__telegram {width: 38px;}
-    .main__icon {width: 57px;}
-}
-/*/
-
-@media (min-width: 992px) {
-    .navmenu__toggler-menu {font-size: 18px;}
-    .main__text {font-size: 18px; line-height: 40px;}
-    .main__text__hub {font-size: 60px; line-height: 60px;}
-    .main__text button {font-size: 18px}
-    .videolabel {font-size: 18px;}
-    .price__text {font-size: 18px; line-height: 32px;}
-    .rate__price {font-size: 22px}
-    .rate__programm__component {font-size: 16px; line-height: 28px;}
-    .rate__button {font-size: 18px;}
-    .main__company-contact {font-size: 24px;}
-    .page__footer {font-size: 12px;}
-    .footer__telegram {width: 18px;}
-    .main__icon {width: 32px;}
-}
 
